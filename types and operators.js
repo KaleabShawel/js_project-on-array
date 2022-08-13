@@ -439,8 +439,7 @@ document.write("<br/>");
  document.write("Built-in method in checking Number: ",no2,"<br/>");
  document.write("<br/>");
  document.write("&nbsp <b>23. Styling DOM Elements </b> <br/>");
- document.write("<br/>");
- document.write("</center>");
+ 
  document.write("<br/>");
  document.write("&nbsp <b>25. Creating and initializing Arrays </b> <br/>");
  document.write("<br/>");
@@ -512,3 +511,33 @@ document.write("<br/>");
  value16.splice(2,1,"Hello");
  document.write("Splicing the element with deleting: ",value16,"<br/>");
  document.write("<br/>");
+ document.write("&nbsp <b>28. Array searching and looping </b> <br/>");
+ document.write("<br/>");
+ const value17 = ['a','b','c'];
+ document.write("The orginal items or Elements: ",value17,"<br/>");
+ document.write("Searching Elements by indexOf method: ",value17.indexOf('c'),"<br/>");
+ document.write("Searching uninitalized Element: ",value17.indexOf('d'),"<br/>");
+ document.write("<br/>");
+ const value18 = ['a','b','c'];
+ document.write("The orginal items or Elements: ",value18,"<br/>");
+ const set = value18.filter(function(item){
+ return item > 'b';
+ });
+ document.write("Searching Elements or items by filter method: ",set,"<br/>");
+ document.write("<br/>");
+ const value19 = ['a','bbb','c'];
+ document.write("The orginal items or Element: ",value19,"<br/>");
+ const found = value19.find(function(item2){
+ return item2.length>1;
+ });
+ document.write("Searching Elements or items by find method: ",found,"<br/>");
+ document.write("<br/>");
+ const value20 = ['a','b','c'];
+ document.write("Looping Array Elements or items: ");
+ value20.forEach(function(item3){
+  document.write("<br/>","Item: ",item3);
+ });
+ document.write("<br/>");
+ document.write("</center>");
+ document.write("<br/>");
+
